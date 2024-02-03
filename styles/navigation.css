@@ -1,0 +1,112 @@
+.navbar {
+    z-index: 100;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navBarItem {
+    display: inline-block;
+    height: calc(100% - 20px);
+}
+
+.navBarItem a {
+    color: green;
+    text-decoration: none;
+}
+
+.navBarMenuBtn {
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    height: 80%;
+    display: none;
+    font-size: calc(40px + 3vw);
+
+    /* must be greater than navbar z-index*/
+    z-index: 110;
+}
+
+.navBarItem img {
+    height: 100%;
+    padding: 10px;
+}
+
+.navBarItem h1 {
+    display: inline-block;
+    padding: 0 30px 0 0;
+}
+
+#navModal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(11, 67, 11);
+    color: white;
+    z-index: 9999;
+    display: none;
+}
+
+#navModal img{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#navModal a {
+    position: relative;
+}
+
+a{
+    color: inherit;
+}
+
+.modalExitBtn {
+    z-index: 99;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    height: 80%;
+    font-size: calc(40px + 3vw);
+}
+
+.modalLinks h1 {
+    color: white;
+}
+
+#inlineLinksContainer{
+    font-size: calc(10px + 0.5vw);
+}
+
+@media (width <=550px) {
+    .navBarMenuBtn {
+        display: block;
+    }
+    #inlineLinksContainer{
+        display: none;
+    }
+}
+
+.fadeIn {
+    animation: fadeUp;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeUp {
+    0% {
+        filter: opacity(0);
+        top: 25vh;
+    }
+
+    100% {
+        filter: opacity(1);
+        top: 0;
+    }
+}

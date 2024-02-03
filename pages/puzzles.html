@@ -1,0 +1,147 @@
+<html>
+
+</html>
+
+<head>
+    <title>Puzzles | Dartmouth CS Society</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/projectGrid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/DSOCSS_logo.png">
+</head>
+
+<body>
+    <div id="navModal">
+        <div class="modalExitBtn" onclick="hideModal();">X </div>
+        <div id="modalLinks" class="Ycenter" style="text-align: center;">
+            <!-- modal.js will automatically add modal links -->
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navBarItem">
+            <a href="../index.html">
+                <img src="../images/DSOCSS_logo.png">
+            </a>
+        </div>
+        <div class="navBarItem" id="inlineLinksContainer">
+            <div class="Ycenter" id="inlineLinks">
+                <!-- modal.js will automatically add navbar links -->
+            </div>
+        </div>
+
+        <img class="navBarMenuBtn" src="../images/Hamburger.png" onclick="showModal();">
+    </div>
+
+    <div class="banner" style="height: 50vh;">
+        <div class="Ycenter" style="z-index: 500;">
+            <h1 class="largeText">Puzzles</h1>
+            <p style="margin: 0 5% 0 5%;">
+                <!-- Subtext can go here -->
+            </p>
+        </div>
+        <div class="colorFilter transparentGreen"></div>
+        <img src="../images/AnonymousHall.JPEG">
+    </div>
+
+    <div class="padded">
+        <h1 class="largeText green" style="font-weight: lighter;">Puzzles</h1>
+        <p>
+            For Fall 2024, Dartmouth Computer Science Society will be posting weekly puzzles for you all to think about.
+            We might decide to have a small prize for whoever solves the most during the term! This weekly puzzle series is maintained by Ribhu Hooja.
+        </p>
+
+        <p class="mediumText">Week 2</p>
+        <p>Week 2 has two puzzles!</p>
+        <div class="blockQuote">
+            <p>
+                <i>
+                    Puzzle #1: You and your friends are prisoners, and you will be allowed to leave if you win the following game. 
+                    There is a chessboard with coins on each square, randomly heads or tails. One square is special, and you are told that square. 
+                    You get to flip ONE coin on the board (out of 64). Then your friend comes in and has to deduce the position of the 
+                    special square just from the configuration. You are allowed to plan in advance, but neither of you know the arrangement 
+                    of the coins on the board before you see it (i.e. your friend won't be able to tell which coin you flipped just from 
+                    looking at the board and comparing with the expected board). How do you win?
+                </i>
+            </p>
+            <p>
+                Puzzle #2: The code in <a href="https://github.com/ribhuhooja/stiff-puzzle">this repository</a> (or, in a slightly different form, attached to this email) 
+                is a boiling-down of <a href="https://github.com/ajoohuhbir/breakout-basic">this repository</a> of mine. In the puzzle version, only the paddle is there that 
+                you are supposed to move around with the A and D keys. The movement is (supposed-to-be) physics-based, 
+                in the sense that when you press the key it applies a force, which produces an acceleration, which changes 
+                velocity which ultimately changes the coordinates. When no key is pressed, the velocity is taken away by a
+                 proportional drag force. However, there's a problem. When you press a key, the block moves as it's supposed to. 
+                As soon as you release, though, the block disappears and python crashes. What's going on?
+            </p>
+        </div>
+
+        <p class="mediumText">Submit your answer(s) here:</p>
+        <iframe src="https://forms.gle/sag59SATU9BiYo8G9"></iframe>
+        <p>
+            Have an idea for a future project? We'd be happy to hear your thoughts and have you join the team!
+        </p>
+        <a href="./team.html">
+            <button>Meet the Team</button>
+        </a>
+
+
+
+        <p class="mediumText">Week 1</p>
+        <p>
+            I want to start off the term with one of my favorites.
+            I think this one is really elegant because the solution is not very complicated,
+            yet if you don't know it it feels impossible.
+        </p>
+        <div class="blockQuote">
+            <p>
+                <i>
+                    You baked some cookies and want to send them over mail to your friend.
+                    Unfortunately, the postman will open any unlocked package and eat the cookies.
+                    You have a padlock and chain that you can wrap around the box to keep it from being opened, and your friend has one too.
+                    But you have different locks and keys; your key cannot open your friend's lock and vice-versa.
+                    The postman is a retired logician and if at any point he can gain access to the cookies, he will
+                    (so no sending the key in an unlocked box over mail first).
+                    How do you make sure your friend can eat your cookies and the postman cannot steal them?
+                </i>
+            </p>
+        </div>
+        <details>
+            <summary>
+                <p style="display: inline; text-decoration: underline  ;">View Solution</p>
+            </summary>
+            <div class="blockQuote">
+                <p>
+                    <i>
+                        The puzzle is solved by mailing the package back-and-forth a few times:<br>
+                        1. Put the cookies in your box and lock it with your padlock. Mail it to your friend.<br>
+                        2. Upon recieving the package, your friend will lock the box with their padlock and send it back to you, with the package being locked by both of your locks.<br>
+                        3. Once you get the package again, remove your lock with your key and mail it back to your friend. The package only has your friend's lock on it.<br>
+                        4. When your friend gets your package they can remove their lock with their key and get the cookies.
+                    </i>
+                </p>
+            </div>
+        </details>
+
+        <p>Congratulations to everyone who got Week 1's puzzle correct:</p>
+        <p>
+            Diogo Silva '28<br>
+            Charles Lowney '28<br>
+            Thomas Bousaleh '28<br>
+            Ali Azam '28<br>
+            Laura Liu '28<br>
+            Ethan Carino '28<br>
+            Kason Sabazan-Chambers '28<br>
+            Richmond Nartey Kwalah Tettey '28<br>
+        </p>
+    </div>
+
+    <div class="footer">
+        <div class="Ycenter">
+            <p>Dartmouth Society of Computer Science Students</p>
+            <p>&copy 2025</p>
+        </div>
+    </div>
+    <script src="../scripts/modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Projects | Dartmouth Society of CS Students</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/projectGrid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/DSOCSS_logo.png">
+</head>
+
+<body>
+    <div id="navModal">
+        <div class="modalExitBtn" onclick="hideModal();">X </div>
+        <div id="modalLinks" class="Ycenter" style="text-align: center;">
+           <!-- modal.js will automatically add modal links -->
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navBarItem">
+            <a href="../index.html">
+                <img src="../images/DSOCSS_logo.png">
+            </a>
+        </div>
+        <div class="navBarItem" id="inlineLinksContainer">
+            <div class="Ycenter" id="inlineLinks">
+                <!-- modal.js will automatically add navbar links -->
+            </div>
+        </div>
+
+        <img class="navBarMenuBtn" src="../images/Hamburger.png" onclick="showModal();">
+    </div>
+
+    <div class="banner" style="height: 50vh;">
+        <div class="Ycenter" style="z-index: 500;">
+            <h1 class="largeText">Projects</h1>
+            <p style="margin: 0 5% 0 5%;">
+                <!-- Subtext can go here -->
+            </p>
+        </div>
+        <div class="colorFilter transparentGreen"></div>
+        <img src="../images/WilderHall.jpeg">
+    </div>
+
+    <div class="padded">
+        <h1 class="largeText green" style="font-weight: lighter;">Published Projects</h1>
+        <noscript>
+            <p>You need to enable JavaScript to view this page.</p>
+        </noscript>
+        <div id="projectContainer" class="gridContainer" style="margin-top: 30px;"> </div>
+    </div>
+
+    <div class="padded">
+        <p>
+            Have an idea for a future project? We'd be happy to hear your thoughts and have you join the team!
+        </p>
+        <a href="./team.html">
+            <button>Meet the Team</button>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        <div class="Ycenter">
+            <p>Dartmouth Society of Computer Science Students</p>
+            <p>&copy 2025</p>
+        </div>
+    </div>
+    <script src="../scripts/modal.js"></script>
+    <script type="module" src="../scripts/projectDisplay.js"></script>
+</body>
+
+</html>
