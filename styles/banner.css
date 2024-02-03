@@ -1,0 +1,32 @@
+.banner {
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.colorFilter {
+    position: absolute;
+    z-index: 55;
+    height: 100%;
+    width: 100%;
+}
+
+.transparentGreen{
+    background-color: rgba(23, 118, 23, 0.5);
+}
+
+@media (width <=550px) {
+    .navBarMenuBtn {
+        display: block;
+    }
+}
