@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Team | Dartmouth Society of CS Students</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/projectGrid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/DSOCSS_logo.png">
+</head>
+
+<body>
+    <div id="navModal">
+        <div class="modalExitBtn" onclick="hideModal();">X </div>
+        <div id="modalLinks" class="Ycenter" style="text-align: center;">
+           <!-- modal.js will automatically add modal links -->
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navBarItem">
+            <a href="../index.html">
+                <img src="../images/DSOCSS_logo.png">
+            </a>
+        </div>
+        <div class="navBarItem" id="inlineLinksContainer">
+            <div class="Ycenter" id="inlineLinks">
+                <!-- modal.js will automatically add navbar links -->
+            </div>
+        </div>
+
+        <img class="navBarMenuBtn" src="../images/Hamburger.png" onclick="showModal();">
+    </div>
+
+    <div class="banner" style="height: 50vh;">
+        <div class="Ycenter" style="z-index: 500;">
+            <h1 class="largeText">Meet the Team</h1>
+            <!-- <p style="margin: 0 5% 0 5%;">
+                Welcome to Dartmouth CS Society!
+            </p> -->
+        </div>
+        <div class="colorFilter transparentGreen"></div>
+        <img src="../images/TeamPhoto.jpeg">
+    </div>
+
+    <div class="padded">
+
+        <h1 class="largeText green" style="font-weight: lighter;">CS Society Board</h1>
+        <div id="teamContainer" class="gridContainer narrowGridCols" style="margin-top: 30px;"></div>
+
+        <h1 class="largeText green" style="font-weight: lighter;">Joining</h1>
+        <p> We are open to new members any time! Please reach out to any of our board members to learn more information or join our club. Joining the CS Society
+            gives you a great opportunity to meet other CS students, learn technical skills, and help shape the future of our organization.
+        </p>
+        <h1 class="largeText green" style="font-weight: lighter;">Meeting Information</h1>
+        <p>We have a general club meeting once a week. Our meeting topics include coding projects, technical
+            workshops, and social events. Project teams meet individually as needed throughout the week to code and
+            debug together.</p>
+        <h1 class="largeText green" style="font-weight: lighter;">Membership</h1>
+        <p> We are open to all skill levels, but we recommend that students take or concurrently enroll in Dartmouth's introductory course, Computer Science 1
+            before joining our club (or have equivalent knowledge). </p>
+    </div>
+
+    <div class="footer">
+        <div class="Ycenter">
+            <p>Dartmouth Society of Computer Science Students</p>
+            <p>&copy 2024</p>
+        </div>
+    </div>
+    <script src="../scripts/modal.js"></script>
+    <script type="module" src="../scripts/teamDisplay.js"></script>
+</body>
+
+</html>
