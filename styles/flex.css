@@ -1,0 +1,35 @@
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-col{
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.flexFullImg{
+    box-shadow: 5px 5px green;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.paddedCol{
+    padding: 30px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .paddedCol{
+        padding: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .paddedCol{
+        padding: 25px 0px 25px 0px;
+    }
+}
