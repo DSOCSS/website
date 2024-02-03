@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Dartmouth Society of CS Students</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/projectGrid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/DSOCSS_logo.png">
+</head>
+
+<body>
+    <div id="navModal">
+        <div class="modalExitBtn" onclick="hideModal();">X </div>
+        <div id="modalLinks" class="Ycenter" style="text-align: center;">
+            <a href="../index.html">
+                <h1>Home</h1>
+            </a>
+            <a href="">
+                <h1>Projects</h1>
+            </a>
+            <a href="./joining.html">
+                <h1>Join</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navBarItem">
+            <a href="../index.html">
+                <img src="../images/DSOCSS_logo.png">
+            </a>
+        </div>
+        <div class="navBarItem" id="inlineLinks">
+            <div class="Ycenter">
+                <a href="">
+                    <h1>Projects</h1>
+                </a>
+                <a href="./joining.html">
+                    <h1>Join</h1>
+                </a>
+            </div>
+        </div>
+
+        <img class="navBarMenuBtn" src="../images/Hamburger.png" onclick="showModal();">
+    </div>
+
+    <div class="banner" style="height: 50vh;">
+        <div class="Ycenter" style="z-index: 500;">
+            <h1 class="largeText">Projects</h1>
+            <p style="margin: 0 5% 0 5%;">
+                Browse our completed projects.
+            </p>
+        </div>
+        <div class="colorFilter transparentGreen"></div>
+        <img src="../images/WilderHall.jpeg">
+    </div>
+
+    <div class="padded">
+        <h1 class="largeText green" style="font-weight: lighter;">Completed Projects</h1>
+        <noscript>
+            <p>You need to enable JavaScript to view this page.</p>
+        </noscript>
+    </div>
+
+    <div id="projectContainer" class="gridContainer" style="margin-top: 30px;"> </div>
+
+    <div class="padded">
+        <h1 id="currentProjects" class="largeText green" style="font-weight: lighter;">Current Projects</h1>
+        <p>
+            We are currently working on a few projects and are planning to announce them later in their development
+            cycles. If you are interested in contributing, we would be happy to have you join the team!
+        </p>
+    </div>
+
+    <div class="footer">
+        <div class="Ycenter">
+            <p>Dartmouth Society of Computer Science Students</p>
+            <p>&copy 2024</p>
+        </div>
+    </div>
+    <script src="../scripts/modal.js"></script>
+</body>
+<script type="module" src="../scripts/projectDisplay.js"></script>
+
+</html>
