@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>Team | Dartmouth Society of CS Students</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/projectGrid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/DSOCSS_logo.png">
+</head>
+
+<body>
+    <div id="navModal">
+        <div class="modalExitBtn" onclick="hideModal();">X </div>
+        <div id="modalLinks" class="Ycenter" style="text-align: center;">
+            <!-- modal.js will automatically add modal links -->
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navBarItem">
+            <a href="../index.html">
+                <img src="../images/DSOCSS_logo.png">
+            </a>
+        </div>
+        <div class="navBarItem" id="inlineLinksContainer">
+            <div class="Ycenter" id="inlineLinks">
+                <!-- modal.js will automatically add navbar links -->
+            </div>
+        </div>
+
+        <img class="navBarMenuBtn" src="../images/Hamburger.png" onclick="showModal();">
+    </div>
+
+    <div class="banner" style="height: 50vh;">
+        <div class="Ycenter" style="z-index: 500;">
+            <h1 class="largeText">Meet the Team</h1>
+        </div>
+        <div class="colorFilter transparentGreen"></div>
+        <img src="../images/TeamPhoto.jpeg">
+    </div>
+
+    <div class="padded">
+        <h1 class="largeText green" style="font-weight: lighter;">CS Society Board</h1>
+
+        <!-- Container for current team members -->
+        <div id="teamContainer" class="gridContainer narrowGridCols" style="margin-top: 30px;">
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/arthurZarins.jpeg" class="teamMemberImage">
+                <h1>Arthur Zarins '27</h1>
+                <p>President</p>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/nateAbbott.jpeg" class="teamMemberImage">
+                <h1>Nate Abbott '27</h1>
+                <p>Treasurer</p>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/connorZhang.png" class="teamMemberImage">
+                <h1>Connor Zhang '27</h1>
+                <p>LeetCode Lead</p>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/tinaPan.jpeg" class="teamMemberImage">
+                <h1>Tina Pan '28</h1>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/claytonLee.jpg" class="teamMemberImage">
+                <h1>Clayton Lee '28</h1>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/WilderHall.jpeg" class="teamMemberImage">
+                <h1>Ellie Dalton '28</h1>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/ribhuHooja.jpeg" class="teamMemberImage">
+                <h1>Ribhu Hooja '27</h1>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/thorLemke.png" class="teamMemberImage">
+                <h1>Thor Lemke '27</h1>
+            </div>
+            <div class="gridItem" style="border: none;">
+                <img src="../images/members/abby2.jpeg" class="teamMemberImage">
+                <h1>Abby</h1>
+            </div>
+        </div>
+
+
+        <h1 class="largeText green" style="font-weight: lighter;">Alumni</h1>
+        <p>Rhea Karty '25</p>
+
+        <!-- Container for alumni -->
+        <div id="alumniContainer" class="gridContainer narrowGridCols" style="margin-top: 30px;"></div>
+
+        <h1 class="largeText green" style="font-weight: lighter;">Meeting Information</h1>
+        <p>Meetings are announced in advance via email to our email list and listserv.</p>
+        <h1 class="largeText green" style="font-weight: lighter;">Membership</h1>
+        <p> We are open to all skill levels, but we recommend that students take or concurrently enroll in Dartmouth's
+            introductory course, Computer Science 1
+            before joining our club (or have equivalent knowledge). </p>
+    </div>
+
+    <div class="footer">
+        <div class="Ycenter">
+            <p>Dartmouth Society of Computer Science Students</p>
+            <p>&copy 2025</p>
+        </div>
+    </div>
+    <script src="../scripts/modal.js"></script>
+    <!-- <script type="module" src="../scripts/teamDisplay.js"></script> -->
+</body>
+
+</html>

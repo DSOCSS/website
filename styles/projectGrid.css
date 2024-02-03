@@ -1,0 +1,72 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 5px;
+}
+
+.narrowGridCols{
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+}
+
+.gridItem{
+    display: inline-block;
+    position: relative;
+
+    border-radius: 10px;
+    border: 1px solid black;
+
+    padding: 10px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.projectImage{
+    width: 90%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.teamMemberImage{
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.projectYear{
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    background-color: rgb(113, 211, 220);
+    padding: 1px 5px 1px 5px;
+    border-radius: 10px;
+}
+
+.gridItem h1 {
+    font-size: 20px;
+}
+
+.gridItem p{
+    font-size: 16px;
+}
+
+.gridItem ul{
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+}
+
+.spotlight{
+    background-color: black;
+    color: white;
+}
+
+/* Display more columns on phones */
+@media (max-width: 500px) {
+    .narrowGridCols{
+        grid-template-columns: repeat(auto-fill, minmax(135px, auto));
+    }    
+}

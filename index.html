@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>Dartmouth Society of CS Students</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./images/DSOCSS_logo.png">
+</head>
+
+<body>
+    <div id="navModal">
+        <div class="modalExitBtn" onclick="hideModal();">X </div>
+        <div id="modalLinks" class="Ycenter" style="text-align: center;">
+            <!-- modal.js will automatically add modal links -->
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navBarItem">
+            <a href=""><img src="./images/DSOCSS_logo.png"></a>
+        </div>
+        <div class="navBarItem Ycenter" id="inlineLinksContainer">
+            <div class="Ycenter" id="inlineLinks">
+                <!-- modal.js will automatically add navbar links -->
+            </div>
+        </div>
+
+        <img class="navBarMenuBtn" src="./images/Hamburger.png" onclick="showModal();">
+    </div>
+
+    <div class="banner">
+        <div class="Ycenter" style="z-index: 500;">
+            <h1 class="largeText">Dartmouth Society of CS Students</h1>
+            <p style="margin: 0 5% 0 5%;">
+                The Dartmouth Society of Computer Science Students (DSOCSS) is a student-run organization that aims to
+                form a strong CS community on campus through team projects and various events.
+            </p>
+        </div>
+        <div class="colorFilter transparentGreen"></div>
+        <img src="./images/Baker_DSub2D.jpeg">
+    </div>
+
+    <div class="padded">
+        <div class="flexbox">
+            <div class="flex-col">
+                <h1 id="about" class="largeText green" style="font-weight: lighter;">About Us</h1>
+
+                <p>
+                    Dartmouth CS Society began in January 2024 with the goal of promoting the study of computer science
+                    through a collaborative learning community. We program various projects in small
+                    teams to learn technical skills and explore applications of computer science that interest us!
+                </p>
+
+                <a href="./pages/team.html">
+                    <button>Meet the Team</button>
+                </a>
+                
+            </div>
+            <div class="flex-col paddedCol">
+                <img src="./images/TeamPhoto.jpeg" class="flexFullImg">
+            </div>
+        </div>
+
+        <h1 id="events" class="largeText green" style="font-weight: lighter;">Previous Events</h1>
+        <div class="flexbox">
+            <div class="flex-col paddedCol">
+                <img src="./images/clubMeeting.JPEG" class="flexFullImg">
+            </div>
+            <div class="flex-col">
+                <p>
+                    Previous events include a private equity hackathon, team <a href="./pages/projects.html">coding projects</a>, advent of code competition, technical interview prep, course advising, and social events!
+                </p>
+            </div>
+        </div>
+        <h1 id="join" class="largeText green" style="font-weight: lighter;">Joining</h1>
+        <p>
+            If you are a Dartmouth student interested in joining CS Society, please reach out to any of our
+            <a href="./pages/team.html">board members!</a> Joining the CS Society gives you a great opportunity to meet other CS students, learn technical
+            skills, and help shape the future of our organization.
+        </p>
+
+    </div>
+
+    <div class="footer">
+        <div class="Ycenter">
+            <p>Dartmouth Society of Computer Science Students</p>
+            <p>&copy 2025</p>
+        </div>
+    </div>
+    <script src="./scripts/modal.js"></script>
+</body>
+
+</html>
